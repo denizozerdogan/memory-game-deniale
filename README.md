@@ -57,11 +57,11 @@ To run this project locally, you'll need to have Node.js and npm (Node Package M
     http://localhost:5173
 
 ## How to Play
--👉 Enter your name on the landing page and upload your avatar, then click on the button to start the game. 
--👉 Select your preferred difficulty level (Easy, Medium, or Hard) and theme (Superheroes or Programming) on the game's home page. The default difficulty is easy and theme is superheroes. 
--👉 The game will automatically restart upon changing the above settings. 
--👉 Memorize the card positions and match them by clicking on two cards at a time.
--👉 Enjoy the game and have fun challenging your memory!
+- 👉 Enter your name on the landing page and upload your avatar, then click on the button to start the game. 
+- 👉 Select your preferred difficulty level (Easy, Medium, or Hard) and theme (Superheroes or Programming) on the game's home page. The default difficulty is easy and theme is superheroes. 
+- 👉 The game will automatically restart upon changing the above settings. 
+- 👉 Memorize the card positions and match them by clicking on two cards at a time.
+- 👉 Enjoy the game and have fun challenging your memory!
 
 ## Acknowledgments
 Special thanks to the open-source community and the following libraries and frameworks used in this project:
