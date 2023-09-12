@@ -1,6 +1,6 @@
-import { Controller, Get, Param } from '@nestjs/common';
-import { GameService } from './game.service';
-import { ObjectId } from 'mongoose';
+import { Controller, Get, NotFoundException, Param, Query } from '@nestjs/common'
+import { GameService } from './game.service'
+import { ObjectId } from 'mongoose'
 
 @Controller('game')
 export class GameController {
@@ -8,8 +8,14 @@ export class GameController {
 
 
   @Get()
- async findAll() {
-    return await this.gameService.findAll();
+  async findAll(@Query('category') category?: string) {
+    const games = await this.gameService.findAll(category);
+    
+    if (!games.length && category) {
+      throw new NotFoundException(`No games found for category: ${category}`);
+    }
+    
+    return games;
   }
 
    @Get(':id')
